@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="welcome to my new page" >
+        <title>MY NEW CAREER</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function sayHello()
+            {
+                alert("Hello HTML")
+            }
+        </script>
+        <style>
+            fieldset{background:wheat;margin-bottom: 20px;}
+        </style>
+    </head>
+    <body>
+       <form name="register">
+         <fieldset>
+             <legend>Personel Information</legend>
+           <label>Username</label>
+           <input type="text" name="username" value="" placeholder="Type Your Name" maxlength="10">
+           
+            <br>
+
+            <label>password</label>
+            <input type="password" name="password">
+        
+            <br>
+            <label>Your message</label><br>
+            <textarea cols="100" rows="7" readonly>Your Name : </textarea>
+
+            <br>
+            <label>Upload Your CV</label>
+                <input type="file">
+            <br>
+            <input type="checkbox">
+            <label>Remember Me</label><br>
+        </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Your favourite</legend>
+            <labe>Choose Your Browser</label><br>
+            <input type="radio" name="browser"value="chrome"> Chrome <br>
+            <input type="radio" name="browser"value="Firefox"> Mozilla Firefox <br>
+            <input type="radio" name="browser"value="Opera"> Opera  <br>   
+           
+            <br>
+            <labe>Choose Your Mobile</label><br>
+        
+            <input type="radio" name="Mobile"value="iphone"> iphone <br>
+            <input type="radio" name="Mobile"value="Samsung"> Samsung <br>
+            <input type="radio" name="Mobile"value="Nokia"> Nokia  <br>  
+            <br>
+        </fieldset> 
+        <fieldset>
+        <legend>Send Option</legend>
+
+            <select name="Time">
+             <optgroup label="Near Time">
+                <option value="1">Now</option>
+                <option value="2">Tomorrow</option>
+            </optgroup>
+            <optgroup label="Far Time">
+                <option value="3">After A week</option>
+                <option value="4">After A Month</option>
+            </optgroup>
+            </select>
+            <input type="hidden" value="testing">  
+            
+
+            <input type="button" name="Say Hello" value="Say Hello" onclick="sayHello()">
+
+            <input type="submit" value="Sign Up">
+
+            <input type="reset" value="restore Default"> 
+        </fieldset>    
+    </form>
+    </body>
+</html> 
