@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="welcome to my new page" >
+        <title>Create A Nice Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script></script>
+        <style>
+         body {background:#EFEFEF;font-family:Arial,tahoma}
+
+         fieldset
+         {
+            background:#FFF;
+            border:1px solid #CCC;
+            padding:20px;
+            width:500px;
+            margin:20px auto
+         }
+         legend
+         {
+            background:#FFF;
+            border:1px solid #CCC;
+            padding:10px;
+         }
+         label{margin-bottom:10px;display:block}
+         input{margin-bottom:10px}
+
+         input[tybe="text"],
+         input[tybe="password"],
+         textarea
+         {
+             padding:8px;
+             width:300px;
+             display: block
+         }
+
+         hr{border:1px solid #EEE}
+         textarea 
+         {
+             height:150px;
+             margin-bottom:10px ;
+         }
+        </style>
+    </head>
+   <body>   
+     <form name="register">
+         <fieldset>
+          <legend>Personal Informtion</legend>
+          <label>User Name</label>
+          <input type="text" name="username">
+          <label>Password</label>
+          <input type="password" name="password">
+          <label>E-Mail</label>
+          <input type="text" name="email">
+          <label>Gender</label>
+          <select name="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+          </select>
+         </fieldset>
+         <fieldset>
+             <legend>Your Favourites</legend>
+             <label>Your Favourit Text Editor</label>
+             <input type="radio" name="editor">KomodoEdit <br>
+             <input type="radio" name="editor">Netbeans <br>
+             <input type="radio" name="editor">SublimeText
+             <hr>
+             <label>Your Favourit Browser</label>
+             <input type="radio" name="Browser">Chrome <br>
+             <input type="radio" name="Browser">Firefox <br>
+             <input type="radio" name="Browser">Opera
+             <hr>
+             <label>Your Favourit Operating System</label>
+             <input type="checkbox">Mac OSX <br>
+             <input type="checkbox">Linux <br>
+             <input type="checkbox">Windows
+         </fieldset>
+         <fieldset>
+             <legend>Your Message</legend>
+             <textarea></textarea>
+             <input type="submit" value="Send Your Data">
+         </fieldset>
+     </form>
+  </body>
+</html> 
